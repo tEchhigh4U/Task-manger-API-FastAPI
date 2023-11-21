@@ -10,3 +10,11 @@ Create a simple Task Manager API using FastAPI. The API will allow users to mana
 5. Users should be able to delete a task by sending a DELETE request to the /tasks/{task_id} endpoint.
 6. Implement input validation to ensure that the required fields are provided when creating or updating a task.
 7. Add error handling and appropriate responses for invalid requests or non-existent resources.
+
+
+## Additional Challenges (optional):
+
+1. Implement pagination to limit the number of tasks returned in a single request.
+2. Add sorting and filtering capabilities to the /tasks endpoint, allowing users to sort tasks by title or status and filter tasks based on specific criteria.
+3. Add authentication and authorization to your API, allowing only authorized users to create, update, and delete tasks.
+4. Implement unit tests to ensure the correctness of your API endpoints and their behavior under different scenarios.
