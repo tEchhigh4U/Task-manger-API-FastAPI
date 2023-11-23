@@ -1,5 +1,4 @@
 import pytest
-import psycopg2
 
 # test fixture as example data to pass a function
 @pytest.fixture
@@ -8,13 +7,12 @@ def example_data():
     return data
 
 @pytest.fixture
-def db_connection():
-    # connect to the database in the postgres
-    conn = psycopg2.connect(
-        dbname="self_learn", 
-        user="postgres", 
-        password="postgres",
-        host="localhost"
-    )
-    yield conn #provide the connected database to the test
-    conn.close() # close the connection after the test runs
+def db_config():
+    # database configuration
+    db_config= {
+        'dbname':'self_learn', 
+        'user':'postgres', 
+        'password': 'postgres',
+        'host':'localhost',
+    }
+    return db_config
