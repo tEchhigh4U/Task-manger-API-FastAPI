@@ -1,5 +1,7 @@
 # python cache
 .pytest_cache/
 .__pycache__/
-./pytest/.__pycache__/
+pytest/__pycache__/
+
+# env
 .venv/
